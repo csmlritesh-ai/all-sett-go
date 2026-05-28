@@ -3,9 +3,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
+// External Image URLs
+const ASSETS = {
+  logo: "https://i.postimg.cc/1zpZgTSs/asg-logo.png",
+};
+
 const handleNavigation = () => {
   window.scrollTo(0, 0);
-  setIsMobileMenuOpen(false);
 };
 
 const Navigation = () => {
@@ -76,10 +80,10 @@ const Navigation = () => {
             whileHover={{ scale: 1.05 }}
             className="flex justify-center"
           >
-            <Link to="/">
+            <Link to="/" onClick={handleNavigation}>
 
               <img
-                src="/images/asg-logo.png"
+                src={ASSETS.logo}
                 alt="ASG Logo"
                 className="w-20 h-20 object-contain"
               />
@@ -175,9 +179,10 @@ const Navigation = () => {
                   key={link.name}
                   to={link.href}
                   className="block text-sm font-semibold tracking-widest text-white/80 hover:text-white"
-                  onClick={() =>
-                    setIsMobileMenuOpen(false)
-                  }
+                  onClick={() => {
+                    handleNavigation();
+                    setIsMobileMenuOpen(false);
+                  }}
                 >
                   {link.name}
                 </Link>

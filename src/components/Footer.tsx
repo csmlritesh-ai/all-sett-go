@@ -7,6 +7,11 @@ import {
   Clock,
 } from "lucide-react";
 
+// External Image URLs
+const ASSETS = {
+  logo: "https://i.postimg.cc/1zpZgTSs/asg-logo.png",
+};
+
 const Footer = () => {
   return (
     <footer
@@ -31,7 +36,7 @@ const Footer = () => {
             {/* Logo */}
             <div className="mb-8">
               <img
-                src="/images/asg-logo.png"
+                src={ASSETS.logo}
                 alt="ASG Logo"
                 className="h-28 w-auto object-contain"
               />

@@ -12,6 +12,17 @@ import {
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
+// External Image URLs
+const ASSETS = {
+  heroBanner: "https://i.postimg.cc/jjzrW9TR/hero-banner.jpg",
+  stadium1: "https://i.postimg.cc/1tBhBq4D/stadium1.jpg",
+  stadium2: "https://i.postimg.cc/4dPkP9nw/stadium2.jpg",
+  stadium3: "https://i.postimg.cc/zB7Z7g30/stadium3.jpg",
+  stadium4: "https://i.postimg.cc/Tw0M0DhB/stadium4.jpg",
+  stadium5: "https://i.postimg.cc/Tw0M0Dhs/stadium5.jpg",
+  stadium6: "https://i.postimg.cc/3R151vd5/stadium6.jpg",
+};
+
 const filters = [
   "All Events",
   "Cricket",
@@ -28,7 +39,7 @@ const events = [
     title: "IPL 2026 Final",
     date: "24 May 2026",
     time: "7:30 PM IST",
-    image: "/images/stadium1.jpg",
+    image: ASSETS.stadium1,
     description:
       "The season finale. There’s no better place to watch it than somewhere with a crowd this into it.",
   },
@@ -37,7 +48,7 @@ const events = [
     title: "UEFA Champions League Final",
     date: "30 May 2026",
     time: "12:30 AM IST",
-    image: "/images/stadium2.jpg",
+    image: ASSETS.stadium2,
     description:
       "Late-night kickoff, good drinks, and no one asking you to keep the noise down.",
   },
@@ -46,7 +57,7 @@ const events = [
     title: "UFC 320: Championship Night",
     date: "7 June 2026",
     time: "8:30 PM IST",
-    image: "/images/stadium3.jpg",
+    image: ASSETS.stadium3,
     description:
       "Every round live on the big screen. Bring people who’ll actually react.",
   },
@@ -55,7 +66,7 @@ const events = [
     title: "Monaco Grand Prix",
     date: "25 May 2026",
     time: "6:30 PM IST",
-    image: "/images/stadium4.jpg",
+    image: ASSETS.stadium4,
     description:
       "The most glamorous race on the calendar. ASG is the right room for it.",
   },
@@ -64,7 +75,7 @@ const events = [
     title: "Wimbledon Men’s Final",
     date: "12 July 2026",
     time: "6:30 PM IST",
-    image: "/images/stadium5.jpg",
+    image: ASSETS.stadium5,
     description:
       "Big-screen tennis hits differently than your couch. Come find out.",
   },
@@ -73,7 +84,7 @@ const events = [
     title: "WWE SummerSlam",
     date: "2 August 2026",
     time: "5:30 AM IST",
-    image: "/images/stadium6.jpg",
+    image: ASSETS.stadium6,
     description:
       "It’s early. We’ll be open. Every entrance, every title match, live.",
   },
@@ -123,7 +134,7 @@ const Events = () => {
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <img
-          src="/images/hero-banner.jpg"
+          src={ASSETS.heroBanner}
           alt="Events Banner"
           className="absolute inset-0 w-full h-full object-cover"
         />

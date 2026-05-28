@@ -11,6 +11,13 @@ import {
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
+// External Image URLs
+const ASSETS = {
+  heroBannerCopy: "https://i.postimg.cc/SskbcrQY/hero-banner-copy.jpg",
+  heroBannerCrowd: "https://i.postimg.cc/LszMq7S5/hero-banner-crowd.jpg",
+  heroBanner: "https://i.postimg.cc/jjzrW9TR/hero-banner.jpg",
+};
+
 const fadeUp = {
   hidden: { opacity: 0, y: 70 },
   visible: (i = 1) => ({
@@ -36,7 +43,7 @@ const About = () => {
 
         {/* Background */}
         <img
-          src="/images/hero-banner-copy.jpg"
+          src={ASSETS.heroBannerCopy}
           alt="ASG Banner"
           className="absolute inset-0 w-full h-full object-cover scale-120"
         />
@@ -115,7 +122,7 @@ const About = () => {
             <div className="relative overflow-hidden rounded-[36px] border border-white/10">
 
               <img
-                src="/images/hero-banner-crowd.jpg"
+                src={ASSETS.heroBannerCrowd}
                 alt="ASG Crowd"
                 className="w-full h-[720px] object-cover hover:scale-105 transition-transform duration-1000"
               />
@@ -435,7 +442,7 @@ const About = () => {
 
           {/* Image */}
           <img
-            src="/images/hero-banner.jpg"
+            src={ASSETS.heroBanner}
             alt="ASG Match Night"
             className="absolute inset-0 w-full h-full object-cover"
           />
