@@ -24,6 +24,27 @@ import {
 } from 'lucide-react';
 import { cn } from './utils/cn';
 
+// External Image URLs from PostImage
+const ASSETS = {
+  logo: "https://i.postimg.cc/1zpZgTSs/asg-logo.png",
+  heroBanner: "https://i.postimg.cc/jjzrW9TR/hero-banner.jpg",
+  massiveScreen: "https://i.postimg.cc/tTkQkx7P/massive-screen.jpg",
+  stadiumSeating: "https://i.postimg.cc/KzfSfMRh/stadium-seating.jpg",
+  pdrRoom: "https://i.postimg.cc/PxTn14fQ/hero-bannerpdr.jpg",
+  battleCorners: "https://i.postimg.cc/63txC06Q/hero-bannergame.jpg",
+  stadiumSeatingCopy: "https://i.postimg.cc/fbxh3FsW/stadium-seating-copy.jpg",
+  foodMenu: "https://i.postimg.cc/mDBW7wZT/hero-banner-food.jpg",
+  drinksMenu: "https://i.postimg.cc/RF4xwRC9/hero-banner-drink.jpg",
+  cricket: "https://i.postimg.cc/1ts1DHRt/hero-bannergamecricket.jpg",
+  football: "https://i.postimg.cc/pTRMKZVn/hero-bannergamfootbsll.jpg",
+  f1: "https://i.postimg.cc/qR4H2LBq/hero-bannergamfootbslformula.jpg",
+  tennis: "https://i.postimg.cc/cH0Gfm13/hero-bannergamfootbslltannis.jpg",
+  party: "https://i.postimg.cc/1tBhBq4w/hero-bannerlocalsamosaparty.jpg",
+  mediaRestaurantIndia: "https://i.postimg.cc/hjsWsdh7/hero-bannerrestaurantindia.jpg",
+  mediaLocalSamosa: "https://i.postimg.cc/W3Tc0npr/hero-bannerlocalsamosa.jpg",
+  video: "images/asg-video.mp4" // Kept local for now
+};
+
 // ASG Brand Colors - used throughout the app
 const COLORS = {
   primaryRed: '#DC2626',
@@ -93,7 +114,7 @@ const Navigation = () => {
   className="flex justify-center"
 >
   <img
-    src="images/asg-logo.png"
+    src={ASSETS.logo}
     alt="ASG Logo"
     className="w-25 h-25 object-contain"
   />
@@ -198,7 +219,7 @@ const HeroSection = () => {
         className="absolute inset-0"
       >
         <img 
-          src="images/hero-banner.jpg" 
+          src={ASSETS.heroBanner} 
           alt="ASG Sports Bar Interior"
           className="w-full h-full object-cover"
         />
@@ -253,7 +274,7 @@ const HeroSection = () => {
               className="absolute h-[340px] w-[340px] rounded-full bg-[#DC2626]/35 blur-[120px]"
             />
             <motion.img
-              src="images/asg-logo.png"
+              src={ASSETS.logo}
               alt="ASG Logo"
               initial={{ scale: 0.52, opacity: 0, filter: "blur(18px)" }}
               animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
@@ -389,22 +410,22 @@ const PhilosophySection = () => {
     {
       tag: "Ultra HD Viewing",
       title: "4K Massive Screen",
-      image: "images/massive-screen.jpg",
+      image: ASSETS.massiveScreen,
     },
     {
       tag: "Arena Comfort",
       title: "Stadium Seating",
-      image: "images/stadium-seating.jpg",
+      image: ASSETS.stadiumSeating,
     },
     {
       tag: "Private Experience",
       title: "PDR Room",
-      image: "images/hero-bannerpdr.jpg",
+      image: ASSETS.pdrRoom,
     },
     {
       tag: "Competitive Energy",
       title: "Battle Corners",
-      image: "images/hero-bannergame.jpg",
+      image: ASSETS.battleCorners,
     },
   ];
 
@@ -506,7 +527,7 @@ const ExperienceSection = () => {
           >
             <div className="relative rounded-3xl overflow-hidden">
               <img 
-                src="images/stadium-seating-copy.jpg" 
+                src={ASSETS.stadiumSeatingCopy} 
                 alt="ASG Lounge Experience"
                 className="w-full aspect-[4/3] object-cover"
               />
@@ -576,19 +597,19 @@ const ExperienceSection = () => {
 const MenuSection = () => {
   const menuItems = [
     {
-      image: "images/hero-banner-food.jpg",
+      image: ASSETS.foodMenu,
       title: "Chef’s Specials",
       category: "Food Menu",
       description: "Premium dishes crafted for champions"
     },
     {
-      image: "images/hero-banner-drink.jpg",
+      image: ASSETS.drinksMenu,
       title: "Signature Drinks",
       category: "Drinks Menu",
       description: "Drinks inspired by sporting legends"
     },
     {
-      image: "images/hero-banner.jpg",
+      image: ASSETS.heroBanner,
       title: "Craft Beers",
       category: "Beverages",
       description: "Local and imported brews on tap"
@@ -701,7 +722,7 @@ const VideoSection = () => {
         {/* Self Hosted Video Background */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="images/asg-video.mp4"
+          src={ASSETS.video}
           autoPlay
           muted
           loop
@@ -736,25 +757,25 @@ const SportsSection = () => {
   const sports = [
     {
       name: "Cricket",
-      image: "images/hero-bannergamecricket.jpg",
+      image: ASSETS.cricket,
       leagues: ["IPL", "World Cup", "T20", "Test"],
       nextMatch: "Today, 7:30 PM"
     },
     {
       name: "Football",
-      image: "images/hero-bannergamfootbsll.jpg",
+      image: ASSETS.football,
       leagues: ["Premier League", "La Liga", "Champions League"],
       nextMatch: "Tomorrow, 8:00 PM"
     },
     {
       name: "Formula 1",
-      image: "images/hero-bannergamfootbslformula.jpg",
+      image: ASSETS.f1,
       leagues: ["Grand Prix", "Monaco", "Silverstone"],
       nextMatch: "Sunday, 5:30 PM"
     },
     {
       name: "Tennis",
-      image: "images/hero-bannergamfootbslltannis.jpg",
+      image: ASSETS.tennis,
       leagues: ["Wimbledon", "US Open", "Australian Open"],
       nextMatch: "Sat, 6:00 PM"
     }
@@ -954,7 +975,7 @@ const EventsSection = () => {
           >
             <div className="relative rounded-3xl overflow-hidden group">
               <img 
-                src="images/hero-bannerlocalsamosaparty.jpg" 
+                src={ASSETS.party} 
                 alt="Group Celebration at ASG"
                 className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -1022,14 +1043,14 @@ const MediaSection = () => {
       logo: "RI",
       date: "Apr 15, 2026",
       title: "ASG Sports Bar Launches in Mumbai with Stadium-Style Dining Experience",
-      image: "images/hero-bannerrestaurantindia.jpg"
+      image: ASSETS.mediaRestaurantIndia
     },
     {
       source: "Local Samosa",
       logo: "LS",
       date: "Apr 16, 2026",
       title: "New Restaurant Launches, Outlets and Menus This Week!",
-      image: "images/hero-bannerlocalsamosa.jpg"
+      image: ASSETS.mediaLocalSamosa
     }
   ];
 
@@ -1341,7 +1362,7 @@ const Footer = () => {
             {/* Logo */}
             <div className="mb-8">
               <img
-                src="images/asg-logo.png"
+                src={ASSETS.logo}
                 alt="ASG Logo"
                 className="h-30 w-auto object-contain"
               />
