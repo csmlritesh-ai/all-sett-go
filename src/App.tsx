@@ -93,7 +93,7 @@ const Navigation = () => {
   className="flex justify-center"
 >
   <img
-    src="/images/asg-logo.png"
+    src="images/asg-logo.png"
     alt="ASG Logo"
     className="w-25 h-25 object-contain"
   />
@@ -198,7 +198,7 @@ const HeroSection = () => {
         className="absolute inset-0"
       >
         <img 
-          src="/images/hero-banner.jpg" 
+          src="images/hero-banner.jpg" 
           alt="ASG Sports Bar Interior"
           className="w-full h-full object-cover"
         />
@@ -253,7 +253,7 @@ const HeroSection = () => {
               className="absolute h-[340px] w-[340px] rounded-full bg-[#DC2626]/35 blur-[120px]"
             />
             <motion.img
-              src="/images/asg-logo.png"
+              src="images/asg-logo.png"
               alt="ASG Logo"
               initial={{ scale: 0.52, opacity: 0, filter: "blur(18px)" }}
               animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
@@ -506,7 +506,7 @@ const ExperienceSection = () => {
           >
             <div className="relative rounded-3xl overflow-hidden">
               <img 
-                src="/images/stadium-seating-copy.jpg" 
+                src="images/stadium-seating-copy.jpg" 
                 alt="ASG Lounge Experience"
                 className="w-full aspect-[4/3] object-cover"
               />
@@ -701,7 +701,7 @@ const VideoSection = () => {
         {/* Self Hosted Video Background */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="/images/asg-video.mp4"
+          src="images/asg-video.mp4"
           autoPlay
           muted
           loop
@@ -954,7 +954,7 @@ const EventsSection = () => {
           >
             <div className="relative rounded-3xl overflow-hidden group">
               <img 
-                src="/images/hero-bannerlocalsamosaparty.jpg" 
+                src="images/hero-bannerlocalsamosaparty.jpg" 
                 alt="Group Celebration at ASG"
                 className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -1341,7 +1341,7 @@ const Footer = () => {
             {/* Logo */}
             <div className="mb-8">
               <img
-                src="/images/asg-logo.png"
+                src="images/asg-logo.png"
                 alt="ASG Logo"
                 className="h-30 w-auto object-contain"
               />
