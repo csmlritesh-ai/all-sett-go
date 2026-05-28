@@ -14,13 +14,13 @@ import Footer from "../components/Footer";
 
 // External Image URLs
 const ASSETS = {
-  heroBanner: "https://i.postimg.cc/jjzrW9TR/hero-banner.jpg",
-  stadium1: "https://i.postimg.cc/1tBhBq4D/stadium1.jpg",
-  stadium2: "https://i.postimg.cc/4dPkP9nw/stadium2.jpg",
-  stadium3: "https://i.postimg.cc/zB7Z7g30/stadium3.jpg",
-  stadium4: "https://i.postimg.cc/Tw0M0DhB/stadium4.jpg",
-  stadium5: "https://i.postimg.cc/Tw0M0Dhs/stadium5.jpg",
-  stadium6: "https://i.postimg.cc/3R151vd5/stadium6.jpg",
+  heroBanner: "https://i.postimg.cc/sxnLgQT4/hero-banner.jpg",
+  stadium1: "https://i.postimg.cc/L4vwTwmy/stadium1.jpg",
+  stadium2: "https://i.postimg.cc/c1T2m2dk/stadium2.jpg",
+  stadium3: "https://i.postimg.cc/WpSCnCsH/stadium3.jpg",
+  stadium4: "https://i.postimg.cc/HsxKPzLB/stadium4.jpg",
+  stadium5: "https://i.postimg.cc/pXT71Cdk/stadium5.jpg",
+  stadium6: "https://i.postimg.cc/J4ngdxh6/stadium6.jpg",
 };
 
 const filters = [

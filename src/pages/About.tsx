@@ -13,9 +13,9 @@ import Footer from "../components/Footer";
 
 // External Image URLs
 const ASSETS = {
-  heroBannerCopy: "https://i.postimg.cc/SskbcrQY/hero-banner-copy.jpg",
-  heroBannerCrowd: "https://i.postimg.cc/LszMq7S5/hero-banner-crowd.jpg",
-  heroBanner: "https://i.postimg.cc/jjzrW9TR/hero-banner.jpg",
+  heroBannerCopy: "https://i.postimg.cc/br65wDmT/hero-banner-copy.jpg",
+  heroBannerCrowd: "https://i.postimg.cc/zvdQGbx2/hero-banner-crowd.jpg",
+  heroBanner: "https://i.postimg.cc/sxnLgQT4/hero-banner.jpg",
 };
 
 const fadeUp = {

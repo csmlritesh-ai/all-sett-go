@@ -9,7 +9,7 @@ import {
 
 // External Image URLs
 const ASSETS = {
-  logo: "https://i.postimg.cc/1zpZgTSs/asg-logo.png",
+  logo: "https://i.postimg.cc/MHsLpM9y/asg-logo.webp",
 };
 
 const Footer = () => {

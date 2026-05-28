@@ -26,22 +26,22 @@ import { cn } from './utils/cn';
 
 // External Image URLs from PostImage
 const ASSETS = {
-  logo: "https://i.postimg.cc/1zpZgTSs/asg-logo.png",
-  heroBanner: "https://i.postimg.cc/jjzrW9TR/hero-banner.jpg",
-  massiveScreen: "https://i.postimg.cc/tTkQkx7P/massive-screen.jpg",
-  stadiumSeating: "https://i.postimg.cc/KzfSfMRh/stadium-seating.jpg",
-  pdrRoom: "https://i.postimg.cc/PxTn14fQ/hero-bannerpdr.jpg",
-  battleCorners: "https://i.postimg.cc/63txC06Q/hero-bannergame.jpg",
-  stadiumSeatingCopy: "https://i.postimg.cc/fbxh3FsW/stadium-seating-copy.jpg",
-  foodMenu: "https://i.postimg.cc/mDBW7wZT/hero-banner-food.jpg",
-  drinksMenu: "https://i.postimg.cc/RF4xwRC9/hero-banner-drink.jpg",
-  cricket: "https://i.postimg.cc/1ts1DHRt/hero-bannergamecricket.jpg",
-  football: "https://i.postimg.cc/pTRMKZVn/hero-bannergamfootbsll.jpg",
-  f1: "https://i.postimg.cc/qR4H2LBq/hero-bannergamfootbslformula.jpg",
-  tennis: "https://i.postimg.cc/cH0Gfm13/hero-bannergamfootbslltannis.jpg",
-  party: "https://i.postimg.cc/1tBhBq4w/hero-bannerlocalsamosaparty.jpg",
-  mediaRestaurantIndia: "https://i.postimg.cc/hjsWsdh7/hero-bannerrestaurantindia.jpg",
-  mediaLocalSamosa: "https://i.postimg.cc/W3Tc0npr/hero-bannerlocalsamosa.jpg",
+  logo: "https://i.postimg.cc/MHsLpM9y/asg-logo.webp",
+  heroBanner: "https://i.postimg.cc/sxnLgQT4/hero-banner.jpg",
+  massiveScreen: "https://i.postimg.cc/mZVJwJTQ/massive-screen.jpg",
+  stadiumSeating: "https://i.postimg.cc/FsRqnpKn/stadium-seating.jpg",
+  pdrRoom: "https://i.postimg.cc/kMwzcz7S/hero-bannerpdr.jpg",
+  battleCorners: "https://i.postimg.cc/Xq2PYGsm/hero-bannergame.jpg",
+  stadiumSeatingCopy: "https://i.postimg.cc/d3WfVk52/stadium-seating-copy.jpg",
+  foodMenu: "https://i.postimg.cc/pr0SLhs7/hero-banner-food.jpg",
+  drinksMenu: "https://i.postimg.cc/yxfG8gLr/hero-banner-drink.jpg",
+  cricket: "https://i.postimg.cc/nrdWhjd8/hero-bannergamecricket.jpg",
+  football: "https://i.postimg.cc/7hBRZGBD/hero-bannergamfootbsll.jpg",
+  f1: "https://i.postimg.cc/6qHPp2Hx/hero-bannergamfootbslformula.jpg",
+  tennis: "https://i.postimg.cc/nVTgkgnr/hero-bannergamfootbslltannis.jpg",
+  party: "https://i.postimg.cc/7PXdVdqG/hero-bannerlocalsamosaparty.jpg",
+  mediaRestaurantIndia: "https://i.postimg.cc/Y28Z3ZtN/hero-bannerrestaurantindia.jpg",
+  mediaLocalSamosa: "https://i.postimg.cc/y6ntPt7W/hero-bannerlocalsamosa.jpg",
   video: "images/asg-video.mp4" // Kept local for now
 };
 
