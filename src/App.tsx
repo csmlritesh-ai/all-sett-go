@@ -93,7 +93,7 @@ const Navigation = () => {
   className="flex justify-center"
 >
   <img
-    src="/images/asg-logo.png"
+    src="images/asg-logo.png"
     alt="ASG Logo"
     className="w-25 h-25 object-contain"
   />
@@ -198,7 +198,7 @@ const HeroSection = () => {
         className="absolute inset-0"
       >
         <img 
-          src="/images/hero-banner.jpg" 
+          src="images/hero-banner.jpg" 
           alt="ASG Sports Bar Interior"
           className="w-full h-full object-cover"
         />
@@ -253,7 +253,7 @@ const HeroSection = () => {
               className="absolute h-[340px] w-[340px] rounded-full bg-[#DC2626]/35 blur-[120px]"
             />
             <motion.img
-              src="/images/asg-logo.png"
+              src="images/asg-logo.png"
               alt="ASG Logo"
               initial={{ scale: 0.52, opacity: 0, filter: "blur(18px)" }}
               animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
@@ -389,22 +389,22 @@ const PhilosophySection = () => {
     {
       tag: "Ultra HD Viewing",
       title: "4K Massive Screen",
-      image: "/images/massive-screen.jpg",
+      image: "images/massive-screen.jpg",
     },
     {
       tag: "Arena Comfort",
       title: "Stadium Seating",
-      image: "/images/stadium-seating.jpg",
+      image: "images/stadium-seating.jpg",
     },
     {
       tag: "Private Experience",
       title: "PDR Room",
-      image: "/images/hero-bannerpdr.jpg",
+      image: "images/hero-bannerpdr.jpg",
     },
     {
       tag: "Competitive Energy",
       title: "Battle Corners",
-      image: "/images/hero-bannergame.jpg",
+      image: "images/hero-bannergame.jpg",
     },
   ];
 
@@ -506,7 +506,7 @@ const ExperienceSection = () => {
           >
             <div className="relative rounded-3xl overflow-hidden">
               <img 
-                src="/images/stadium-seating-copy.jpg" 
+                src="images/stadium-seating-copy.jpg" 
                 alt="ASG Lounge Experience"
                 className="w-full aspect-[4/3] object-cover"
               />
@@ -576,19 +576,19 @@ const ExperienceSection = () => {
 const MenuSection = () => {
   const menuItems = [
     {
-      image: "/images/hero-banner-food.jpg",
+      image: "images/hero-banner-food.jpg",
       title: "Chef’s Specials",
       category: "Food Menu",
       description: "Premium dishes crafted for champions"
     },
     {
-      image: "/images/hero-banner-drink.jpg",
+      image: "images/hero-banner-drink.jpg",
       title: "Signature Drinks",
       category: "Drinks Menu",
       description: "Drinks inspired by sporting legends"
     },
     {
-      image: "/images/hero-banner.jpg",
+      image: "images/hero-banner.jpg",
       title: "Craft Beers",
       category: "Beverages",
       description: "Local and imported brews on tap"
@@ -701,7 +701,7 @@ const VideoSection = () => {
         {/* Self Hosted Video Background */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="/images/asg-video.mp4"
+          src="images/asg-video.mp4"
           autoPlay
           muted
           loop
@@ -736,25 +736,25 @@ const SportsSection = () => {
   const sports = [
     {
       name: "Cricket",
-      image: "/images/hero-bannergamecricket.jpg",
+      image: "images/hero-bannergamecricket.jpg",
       leagues: ["IPL", "World Cup", "T20", "Test"],
       nextMatch: "Today, 7:30 PM"
     },
     {
       name: "Football",
-      image: "/images/hero-bannergamfootbsll.jpg",
+      image: "images/hero-bannergamfootbsll.jpg",
       leagues: ["Premier League", "La Liga", "Champions League"],
       nextMatch: "Tomorrow, 8:00 PM"
     },
     {
       name: "Formula 1",
-      image: "/images/hero-bannergamfootbslformula.jpg",
+      image: "images/hero-bannergamfootbslformula.jpg",
       leagues: ["Grand Prix", "Monaco", "Silverstone"],
       nextMatch: "Sunday, 5:30 PM"
     },
     {
       name: "Tennis",
-      image: "/images/hero-bannergamfootbslltannis.jpg",
+      image: "images/hero-bannergamfootbslltannis.jpg",
       leagues: ["Wimbledon", "US Open", "Australian Open"],
       nextMatch: "Sat, 6:00 PM"
     }
@@ -954,7 +954,7 @@ const EventsSection = () => {
           >
             <div className="relative rounded-3xl overflow-hidden group">
               <img 
-                src="/images/hero-bannerlocalsamosaparty.jpg" 
+                src="images/hero-bannerlocalsamosaparty.jpg" 
                 alt="Group Celebration at ASG"
                 className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -1022,14 +1022,14 @@ const MediaSection = () => {
       logo: "RI",
       date: "Apr 15, 2026",
       title: "ASG Sports Bar Launches in Mumbai with Stadium-Style Dining Experience",
-      image: "/images/hero-bannerrestaurantindia.jpg"
+      image: "images/hero-bannerrestaurantindia.jpg"
     },
     {
       source: "Local Samosa",
       logo: "LS",
       date: "Apr 16, 2026",
       title: "New Restaurant Launches, Outlets and Menus This Week!",
-      image: "/images/hero-bannerlocalsamosa.jpg"
+      image: "images/hero-bannerlocalsamosa.jpg"
     }
   ];
 
@@ -1041,7 +1041,7 @@ const MediaSection = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="text-2xl md:text-3xl font-bold text-white"Event
+            className="text-2xl md:text-3xl font-bold text-white"
           >
             MEDIA COVERAGE
           </motion.h3>
@@ -1341,7 +1341,7 @@ const Footer = () => {
             {/* Logo */}
             <div className="mb-8">
               <img
-                src="/images/asg-logo.png"
+                src="images/asg-logo.png"
                 alt="ASG Logo"
                 className="h-30 w-auto object-contain"
               />
