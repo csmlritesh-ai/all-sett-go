@@ -1,0 +1,4 @@
+interface:
+  display_name: "Duckpin"
+  short_description: "Build Duckpin bowling content and experiences."
+  default_prompt: "Use the Duckpin skill to create accurate Duckpin bowling content, pages, event materials, or app features."
