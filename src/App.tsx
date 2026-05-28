@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import Events from "./pages/Events";
@@ -1518,6 +1518,12 @@ const HomePage = () => {
 
 // Main App Component
 export default function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <>
       <CustomCursor />
